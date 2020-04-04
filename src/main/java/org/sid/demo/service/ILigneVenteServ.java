@@ -2,24 +2,25 @@ package org.sid.demo.service;
 
 import java.util.List;
 
-import org.sid.demo.entities.Article;
+
+import org.sid.demo.entities.LigneVente;
 
 public interface ILigneVenteServ {
-	public Article save (Article entity);
+	public LigneVente save (LigneVente entity);
 	
-	public Article update(Article entity);
+	public LigneVente update(LigneVente entity);
 	
-	public Article getById(Long id);
+	public LigneVente getById(Long id);
 	
-	public List<Article> selectAll();
+	public List<LigneVente> selectAll();
 	
-	public List<Article> selectAll(String sortField , String sort);
+	public List<LigneVente> selectAll(String sortField , String sort);
 	
 	public void remove(Long id);
 	
-	public Article findOne(String paramName , Object paramValue);
+	public LigneVente findOne(String paramName , Object paramValue);
 	
-	public Article findOne(String[] paramNames , Object[] paramValues);
+	public LigneVente findOne(String[] paramNames , Object[] paramValues);
 	
 	public int findCountBy(String paramName , String paramValue);
 	

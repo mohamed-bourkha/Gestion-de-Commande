@@ -2,24 +2,24 @@ package org.sid.demo.service;
 
 import java.util.List;
 
-import org.sid.demo.entities.Article;
+import org.sid.demo.entities.MouvementStock;
 
 public interface IMouvementStockServ {
-	public Article save (Article entity);
+	public MouvementStock save (MouvementStock entity);
 	
-	public Article update(Article entity);
+	public MouvementStock update(MouvementStock entity);
 	
-	public Article getById(Long id);
+	public MouvementStock getById(Long id);
 	
-	public List<Article> selectAll();
+	public List<MouvementStock> selectAll();
 	
-	public List<Article> selectAll(String sortField , String sort);
+	public List<MouvementStock> selectAll(String sortField , String sort);
 	
 	public void remove(Long id);
 	
-	public Article findOne(String paramName , Object paramValue);
+	public MouvementStock findOne(String paramName , Object paramValue);
 	
-	public Article findOne(String[] paramNames , Object[] paramValues);
+	public MouvementStock findOne(String[] paramNames , Object[] paramValues);
 	
 	public int findCountBy(String paramName , String paramValue);
 	

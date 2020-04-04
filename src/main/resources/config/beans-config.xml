@@ -8,5 +8,60 @@
 	<bean id = "articleserv" class="org.sid.demo.service.impl.ArticleServImp">
 		<property name="dao" ref = "articleDao"></property>
 	</bean>
+	
+	<bean id="categoryDao" class="org.sid.demo.dao.impl.CategoryDaoImpl"></bean>
+	<bean id="categoryserv" class="org.sid.demo.service.impl.CategoryServImp">
+		<property name="dao" ref="categoryDao"></property>
+	</bean>
+	
+	<bean id="clientDao" class="org.sid.demo.dao.impl.ClientDaoImpl"></bean>
+	<bean id="clientserv" class="org.sid.demo.service.impl.ClientServImp">
+		<property name="dao" ref="clientDao"></property>
+	</bean>
+	
+	<bean id="commandeclientDao" class="org.sid.demo.dao.impl.CommandeClientDaoImpl"></bean>
+	<bean id="commandeclientserv" class="org.sid.demo.service.impl.CommandeClientServImp">
+		<property name="dao" ref="commandeclientDao"></property>
+	</bean>
 		
+	<bean id="commandefournisseurDao" class="org.sid.demo.dao.impl.CommandeFournisseurDaoImpl"></bean>	
+	<bean id="commandefournisseurserv" class="org.sid.demo.service.impl.CommandeFournisseurServImp">
+		<property name="dao" ref="commandefournisseurDao"></property>
+	</bean>	
+	
+		<bean id="fournisseurDao" class="org.sid.demo.dao.impl.FournisseurDaoImpl"></bean>	
+	<bean id="fournisseurserv" class="org.sid.demo.service.impl.FournisseurServImp">
+		<property name="dao" ref="fournisseurDao"></property>
+	</bean>	
+	
+	<bean id="lignecommandeclientDao" class="org.sid.demo.dao.impl.LigneCommandeClientDaoImpl"></bean>
+	<bean id="lignecommandeclientserv" class="org.sid.demo.service.impl.LigneCommandeClientServImp">
+		<property name="dao" ref="lignecommandeclientDao"></property>
+	</bean>
+	
+	<bean id="lignecommandefournisseurDao" class="org.sid.demo.dao.impl.LigneCommandeForunisseurDaoImpl"></bean>	
+	<bean id="lignecommandefournisseurserv" class="org.sid.demo.service.impl.LigneCommandeFournisseurServImp">
+		<property name="dao" ref="lignecommandefournisseurDao"></property>
+	</bean>	
+	
+	<bean id="ligneventeDao" class="org.sid.demo.dao.impl.LigneVenteDaoImpl"></bean>
+	<bean id="ligneventserv" class="org.sid.demo.service.impl.LigneVenteServImp">
+		<property name="dao" ref="ligneventeDao"></property>
+	</bean>
+	
+	<bean id="mouvementstockDao" class="org.sid.demo.dao.impl.MouvementStockDaoImpl"></bean>
+	<bean id="mouvementstockserv" class="org.sid.demo.service.impl.MouvementStockServImp">
+		<property name="dao" ref="mouvementstockDao"></property>	
+	</bean>
+	
+	<bean id="utilisateurDao" class="org.sid.demo.dao.impl.UtilisateurDaoImpl"></bean>
+	<bean id="utilisateurserv" class="org.sid.demo.service.impl.UtilisateurServImp">
+		<property name="dao" ref="utilisateurDao"></property>
+	</bean>
+	
+	<bean id="venteDao" class="org.sid.demo.dao.impl.VenteDaoImpl"></bean>
+	<bean id="ventserv" class="org.sid.demo.service.impl.VenteServImp">
+		<property name="dao" ref="venteDao"></property>
+	</bean>
+	
 </beans>
