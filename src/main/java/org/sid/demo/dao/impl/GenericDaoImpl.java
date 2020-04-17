@@ -54,7 +54,7 @@ public class GenericDaoImpl<E> implements IGenericDao<E> {
 
 	@Override
 	public List<E> selectAll(String sortField, String sort) {
-		Query query = em.createQuery("select t from" + type.getSimpleName() + sortField + " " + sort);
+		Query query = em.createQuery("select t from" + type.getSimpleName() +"t order by"  + sortField + " " + sort);
 		return query.getResultList();
 	}
 
